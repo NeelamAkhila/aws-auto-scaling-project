@@ -1,0 +1,9 @@
+sudo dnf update -y
+sudo dnf install nginx -y
+sudo systemctl start nginx
+sudo systemctl enable nginx
+
+cd /usr/share/nginx/html
+sudo nano index.html
+
+sudo systemctl restart nginx
